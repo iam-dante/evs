@@ -11,17 +11,21 @@
     />
     <link href="../dist/output.css" rel="stylesheet" />
 
-    <title>Home</title>
+    <title>Dashboard</title>
   </head>
   <body class="h-screen">
     <div class="h-screen">
-      <div class="relative h-44 px-12 flex items-center bg-yellow-200">
-        <img src="../images/immigration-logo.jpeg" class="h-40 w-40" />
+      <!-- Header div -->
+      <header class="relative h-44 px-12 flex items-center">
+        <img
+          src="../images/immigration-logo.jpeg"
+          class="ml-12 mt-2 h-40 w-40"
+        />
 
         <div class="absolute right-12 flex flex-row items-center">
           <div class="mr-6 flex flex-col">
-            <p>Username</p>
-            <h>Julius Nyerere International Airport</h>
+            <p class="text-2xl font-medium">Username</p>
+            <h class="text-xl">Julius Nyerere International Airport</h>
           </div>
           <svg
             width="39"
@@ -38,12 +42,12 @@
             />
           </svg>
         </div>
-      </div>
+      </header>
 
-      <div class="flex flex-row">
-        <!-- navigation side bar -->
-        <nav class="w-[18%] bg-[#434343] pb-12 mt-12">
-          <ul class="">
+      <div class="flex">
+        <nav class="w-[18%] bg-[#434343] pb-12 mt-12 h-2/5 sticky top-0">
+          <!-- navigation side bar -->
+          <ul class="space-y-4">
             <li
               class="h-16 w-full bg-[#406B9C] flex px-6 items-center text-lg font-bold text-white space-x-8"
             >
@@ -90,7 +94,7 @@
                       />
                     </svg>
 
-                    <h>Managemet</h>
+                    <h>Management</h>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="absolute right-8 h-6 w-6 group-open:transform group-open:-rotate-180 group-open:transition group-open:duration-500 group-open:ease-in-out"
@@ -111,76 +115,47 @@
                 <div class="bg-[#5C5C5C]">
                   <!-- list of drop down -->
                   <ul>
-                    <li
+                    <a href="../pages/usermanagement.html">
+                      <li
+                        class="h-16 w-full flex items-center text-lg font-bold text-white space-x-8 hover:bg-[#406B9C] cursor-pointer"
+                      >
+                        <div class="flex items-center px-10 space-x-4">
+                          <h>User Management</h>
+                        </div>
+                      </li>
+                    </a>
+
+                    <a
+                      href="./airlinemanagment.html"
                       class="h-16 w-full flex items-center text-lg font-bold text-white space-x-8 hover:bg-[#406B9C] cursor-pointer"
                     >
-                      <div class="flex items-center px-6 space-x-4">
-                        <svg
-                          width="36"
-                          height="36"
-                          viewBox="0 0 36 36"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6 7.5C6 7.10218 6.15804 6.72064 6.43934 6.43934C6.72064 6.15804 7.10218 6 7.5 6H28.5C28.8978 6 29.2794 6.15804 29.5607 6.43934C29.842 6.72064 30 7.10218 30 7.5V10.5C30 10.8978 29.842 11.2794 29.5607 11.5607C29.2794 11.842 28.8978 12 28.5 12H7.5C7.10218 12 6.72064 11.842 6.43934 11.5607C6.15804 11.2794 6 10.8978 6 10.5V7.5ZM6 19.5C6 19.1022 6.15804 18.7206 6.43934 18.4393C6.72064 18.158 7.10218 18 7.5 18H16.5C16.8978 18 17.2794 18.158 17.5607 18.4393C17.842 18.7206 18 19.1022 18 19.5V28.5C18 28.8978 17.842 29.2794 17.5607 29.5607C17.2794 29.842 16.8978 30 16.5 30H7.5C7.10218 30 6.72064 29.842 6.43934 29.5607C6.15804 29.2794 6 28.8978 6 28.5V19.5ZM24 19.5C24 19.1022 24.158 18.7206 24.4393 18.4393C24.7206 18.158 25.1022 18 25.5 18H28.5C28.8978 18 29.2794 18.158 29.5607 18.4393C29.842 18.7206 30 19.1022 30 19.5V28.5C30 28.8978 29.842 29.2794 29.5607 29.5607C29.2794 29.842 28.8978 30 28.5 30H25.5C25.1022 30 24.7206 29.842 24.4393 29.5607C24.158 29.2794 24 28.8978 24 28.5V19.5Z"
-                            stroke="white"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
+                      <li>
+                        <div class="flex items-center px-10 space-x-4">
+                          <h>Airline Management</h>
+                        </div>
+                      </li>
+                    </a>
 
-                        <h>User Management</h>
-                      </div>
-                    </li>
-                    <li
+                    <a
+                      href="./flightmanagement.html"
                       class="h-16 w-full flex items-center text-lg font-bold text-white space-x-8 hover:bg-[#406B9C] cursor-pointer"
                     >
-                      <div class="flex items-center px-6 space-x-4">
-                        <svg
-                          width="36"
-                          height="36"
-                          viewBox="0 0 36 36"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6 7.5C6 7.10218 6.15804 6.72064 6.43934 6.43934C6.72064 6.15804 7.10218 6 7.5 6H28.5C28.8978 6 29.2794 6.15804 29.5607 6.43934C29.842 6.72064 30 7.10218 30 7.5V10.5C30 10.8978 29.842 11.2794 29.5607 11.5607C29.2794 11.842 28.8978 12 28.5 12H7.5C7.10218 12 6.72064 11.842 6.43934 11.5607C6.15804 11.2794 6 10.8978 6 10.5V7.5ZM6 19.5C6 19.1022 6.15804 18.7206 6.43934 18.4393C6.72064 18.158 7.10218 18 7.5 18H16.5C16.8978 18 17.2794 18.158 17.5607 18.4393C17.842 18.7206 18 19.1022 18 19.5V28.5C18 28.8978 17.842 29.2794 17.5607 29.5607C17.2794 29.842 16.8978 30 16.5 30H7.5C7.10218 30 6.72064 29.842 6.43934 29.5607C6.15804 29.2794 6 28.8978 6 28.5V19.5ZM24 19.5C24 19.1022 24.158 18.7206 24.4393 18.4393C24.7206 18.158 25.1022 18 25.5 18H28.5C28.8978 18 29.2794 18.158 29.5607 18.4393C29.842 18.7206 30 19.1022 30 19.5V28.5C30 28.8978 29.842 29.2794 29.5607 29.5607C29.2794 29.842 28.8978 30 28.5 30H25.5C25.1022 30 24.7206 29.842 24.4393 29.5607C24.158 29.2794 24 28.8978 24 28.5V19.5Z"
-                            stroke="white"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-
-                        <h>Airline Management</h>
-                      </div>
-                    </li>
-
-                    <li
+                      <li>
+                        <div class="flex items-center px-10 space-x-4">
+                          <h>Flight Management</h>
+                        </div>
+                      </li>
+                    </a>
+                    <a
+                      href="./flightmanagement.html"
                       class="h-16 w-full flex items-center text-lg font-bold text-white space-x-8 hover:bg-[#406B9C] cursor-pointer"
                     >
-                      <div class="flex items-center px-6 space-x-4">
-                        <svg
-                          width="36"
-                          height="36"
-                          viewBox="0 0 36 36"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6 7.5C6 7.10218 6.15804 6.72064 6.43934 6.43934C6.72064 6.15804 7.10218 6 7.5 6H28.5C28.8978 6 29.2794 6.15804 29.5607 6.43934C29.842 6.72064 30 7.10218 30 7.5V10.5C30 10.8978 29.842 11.2794 29.5607 11.5607C29.2794 11.842 28.8978 12 28.5 12H7.5C7.10218 12 6.72064 11.842 6.43934 11.5607C6.15804 11.2794 6 10.8978 6 10.5V7.5ZM6 19.5C6 19.1022 6.15804 18.7206 6.43934 18.4393C6.72064 18.158 7.10218 18 7.5 18H16.5C16.8978 18 17.2794 18.158 17.5607 18.4393C17.842 18.7206 18 19.1022 18 19.5V28.5C18 28.8978 17.842 29.2794 17.5607 29.5607C17.2794 29.842 16.8978 30 16.5 30H7.5C7.10218 30 6.72064 29.842 6.43934 29.5607C6.15804 29.2794 6 28.8978 6 28.5V19.5ZM24 19.5C24 19.1022 24.158 18.7206 24.4393 18.4393C24.7206 18.158 25.1022 18 25.5 18H28.5C28.8978 18 29.2794 18.158 29.5607 18.4393C29.842 18.7206 30 19.1022 30 19.5V28.5C30 28.8978 29.842 29.2794 29.5607 29.5607C29.2794 29.842 28.8978 30 28.5 30H25.5C25.1022 30 24.7206 29.842 24.4393 29.5607C24.158 29.2794 24 28.8978 24 28.5V19.5Z"
-                            stroke="white"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-
-                        <h>Flight Management</h>
-                      </div>
-                    </li>
+                      <li>
+                        <div class="flex items-center px-10 space-x-4">
+                          <h>Ports Management</h>
+                        </div>
+                      </li>
+                    </a>
                   </ul>
                 </div>
               </details>
@@ -190,9 +165,9 @@
             <!-- on arrival drop down -->
             <li class="inline-block w-full cursor-pointer">
               <details
-                class="group open:ring-black/5 rounded-lg h-16 w-full flex items-center text-lg font-bold text-white"
+                class="group rounded-lg h-16 w-full flex items-center text-lg font-bold text-white"
               >
-                <summary class="relative flex items-center font-bold h-12 px-6">
+                <summary class="relative flex items-center font-bold h-16 px-6">
                   <div
                     class="flex items-center font-bold cursor-pointer space-x-8"
                   >
@@ -231,9 +206,9 @@
                   </div>
                 </summary>
 
-                <div class="">
+                <div class="bg-[#5C5C5C]">
                   <!-- list of drop down -->
-                  <ul>
+                  <ul class="">
                     <li
                       class="h-16 w-full flex items-center text-lg font-bold text-white space-x-8 hover:bg-[#406B9C] cursor-pointer"
                     >
@@ -257,29 +232,32 @@
                         <h>User Management</h>
                       </div>
                     </li>
-                    <li
-                      class="h-16 w-full flex items-center text-lg font-bold text-white space-x-8 hover:bg-[#406B9C] cursor-pointer"
-                    >
-                      <div class="flex items-center px-6 space-x-4">
-                        <svg
-                          width="36"
-                          height="36"
-                          viewBox="0 0 36 36"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6 7.5C6 7.10218 6.15804 6.72064 6.43934 6.43934C6.72064 6.15804 7.10218 6 7.5 6H28.5C28.8978 6 29.2794 6.15804 29.5607 6.43934C29.842 6.72064 30 7.10218 30 7.5V10.5C30 10.8978 29.842 11.2794 29.5607 11.5607C29.2794 11.842 28.8978 12 28.5 12H7.5C7.10218 12 6.72064 11.842 6.43934 11.5607C6.15804 11.2794 6 10.8978 6 10.5V7.5ZM6 19.5C6 19.1022 6.15804 18.7206 6.43934 18.4393C6.72064 18.158 7.10218 18 7.5 18H16.5C16.8978 18 17.2794 18.158 17.5607 18.4393C17.842 18.7206 18 19.1022 18 19.5V28.5C18 28.8978 17.842 29.2794 17.5607 29.5607C17.2794 29.842 16.8978 30 16.5 30H7.5C7.10218 30 6.72064 29.842 6.43934 29.5607C6.15804 29.2794 6 28.8978 6 28.5V19.5ZM24 19.5C24 19.1022 24.158 18.7206 24.4393 18.4393C24.7206 18.158 25.1022 18 25.5 18H28.5C28.8978 18 29.2794 18.158 29.5607 18.4393C29.842 18.7206 30 19.1022 30 19.5V28.5C30 28.8978 29.842 29.2794 29.5607 29.5607C29.2794 29.842 28.8978 30 28.5 30H25.5C25.1022 30 24.7206 29.842 24.4393 29.5607C24.158 29.2794 24 28.8978 24 28.5V19.5Z"
-                            stroke="white"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
 
-                        <h>Airline Management</h>
-                      </div>
-                    </li>
+                    <a href="./airlinemanagment.html">
+                      <li
+                        class="h-16 w-full flex items-center text-lg font-bold text-white space-x-8 hover:bg-[#406B9C] cursor-pointer"
+                      >
+                        <div class="flex items-center px-6 space-x-4">
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M6 7.5C6 7.10218 6.15804 6.72064 6.43934 6.43934C6.72064 6.15804 7.10218 6 7.5 6H28.5C28.8978 6 29.2794 6.15804 29.5607 6.43934C29.842 6.72064 30 7.10218 30 7.5V10.5C30 10.8978 29.842 11.2794 29.5607 11.5607C29.2794 11.842 28.8978 12 28.5 12H7.5C7.10218 12 6.72064 11.842 6.43934 11.5607C6.15804 11.2794 6 10.8978 6 10.5V7.5ZM6 19.5C6 19.1022 6.15804 18.7206 6.43934 18.4393C6.72064 18.158 7.10218 18 7.5 18H16.5C16.8978 18 17.2794 18.158 17.5607 18.4393C17.842 18.7206 18 19.1022 18 19.5V28.5C18 28.8978 17.842 29.2794 17.5607 29.5607C17.2794 29.842 16.8978 30 16.5 30H7.5C7.10218 30 6.72064 29.842 6.43934 29.5607C6.15804 29.2794 6 28.8978 6 28.5V19.5ZM24 19.5C24 19.1022 24.158 18.7206 24.4393 18.4393C24.7206 18.158 25.1022 18 25.5 18H28.5C28.8978 18 29.2794 18.158 29.5607 18.4393C29.842 18.7206 30 19.1022 30 19.5V28.5C30 28.8978 29.842 29.2794 29.5607 29.5607C29.2794 29.842 28.8978 30 28.5 30H25.5C25.1022 30 24.7206 29.842 24.4393 29.5607C24.158 29.2794 24 28.8978 24 28.5V19.5Z"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+
+                          <h>Airline Management</h>
+                        </div>
+                      </li>
+                    </a>
 
                     <li
                       class="h-16 w-full flex items-center text-lg font-bold text-white space-x-8 hover:bg-[#406B9C] cursor-pointer"
@@ -350,7 +328,7 @@
                   </div>
                 </summary>
 
-                <div class="">
+                <div class="bg-[#5C5C5C]">
                   <!-- list of drop down -->
                   <ul>
                     <li
@@ -493,102 +471,17 @@
             <li
               class="mt-28 h-16 w-full flex text-lg font-semibold text-white space-x-8 justify-center items-center"
             >
-              <button class="h-full w-[80%] bg-red-700 rounded-lg">
+              <a
+                href="../index.html"
+                class="h-full w-[80%] bg-red-700 rounded-lg flex items-center justify-center hover:border-red-700 hover:border-2 hover:text-red-400 text-xl font-bold hover:bg-[#434343]"
+              >
                 SIGN OUT
-              </button>
+              </a>
             </li>
           </ul>
         </nav>
 
         <!-- main view -->
-        <div class="h-screen w-[82%] ">
-          <div class="w-full">
-            <div class="h-20 w-full flex items-center place-content-end px-8">
-              <div class="px-2 space-x-4 flex">
-                <span
-                  class="py-4 px-6 bg-[#D6F5DB] flex items-center space-x-2 rounded-md"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M10 3C10.2652 3 10.5196 3.10536 10.7071 3.29289C10.8946 3.48043 11 3.73478 11 4V9H16C16.2652 9 16.5196 9.10536 16.7071 9.29289C16.8946 9.48043 17 9.73478 17 10C17 10.2652 16.8946 10.5196 16.7071 10.7071C16.5196 10.8946 16.2652 11 16 11H11V16C11 16.2652 10.8946 16.5196 10.7071 16.7071C10.5196 16.8946 10.2652 17 10 17C9.73478 17 9.48043 16.8946 9.29289 16.7071C9.10536 16.5196 9 16.2652 9 16V11H4C3.73478 11 3.48043 10.8946 3.29289 10.7071C3.10536 10.5196 3 10.2652 3 10C3 9.73478 3.10536 9.48043 3.29289 9.29289C3.48043 9.10536 3.73478 9 4 9H9V4C9 3.73478 9.10536 3.48043 9.29289 3.29289C9.48043 3.10536 9.73478 3 10 3Z"
-                      fill="#527D27"
-                    />
-                  </svg>
-
-                  <h class="font-bold text-[#527D27]">New User</h>
-                </span>
-
-                <span
-                  class="py-4 px-6 bg-[#D6E8F5] flex items-center space-x-2 rounded-md"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M10 3C10.2652 3 10.5196 3.10536 10.7071 3.29289C10.8946 3.48043 11 3.73478 11 4V9H16C16.2652 9 16.5196 9.10536 16.7071 9.29289C16.8946 9.48043 17 9.73478 17 10C17 10.2652 16.8946 10.5196 16.7071 10.7071C16.5196 10.8946 16.2652 11 16 11H11V16C11 16.2652 10.8946 16.5196 10.7071 16.7071C10.5196 16.8946 10.2652 17 10 17C9.73478 17 9.48043 16.8946 9.29289 16.7071C9.10536 16.5196 9 16.2652 9 16V11H4C3.73478 11 3.48043 10.8946 3.29289 10.7071C3.10536 10.5196 3 10.2652 3 10C3 9.73478 3.10536 9.48043 3.29289 9.29289C3.48043 9.10536 3.73478 9 4 9H9V4C9 3.73478 9.10536 3.48043 9.29289 3.29289C9.48043 3.10536 9.73478 3 10 3Z"
-                      fill="#406B9C"
-                    />
-                  </svg>
-
-                  <h class="font-bold text-[#406B9C]">New User and Domain</h>
-                </span>
-              </div>
-            </div>
-
-            <div
-              class="bg-[#E0E0E0] h-36 mx-8 rounded-lg flex items-center px-48 justify-around"
-            >
-              <input
-                id="input1"
-                class="h-12 w-96 px-6 rounded-md focus:outline-[#406B9C] border border-slate-300"
-                placeholder="Search by Full Name"
-              />
-              <input
-                id="input2"
-                class="h-12 w-96 px-6 rounded-md focus:outline-[#406B9C] border border-slate-300 shadow-sm"
-                placeholder="Search by Username"
-              />
-              <button
-                class="h-12 w-32 flex justify-center items-center rounded-md px-4 bg-[#406B9C] text-white font-bold text-xl hover:border-2 hover:border-[#406B9C] hover:bg-white hover:text-[#406B9C]"
-              >
-                Search
-              </button>
-            </div>
-          </div>
-
-          <!-- Data table -->
-          <div class="px-8 space-y-8">
-            <table id="table_id" class=" display ">
-              <thead class="bg-[#434343]">
-                <tr class="text-white items-center">
-                  <th>Column 1</th>
-                  <th>Column 2</th>
-                  <th>Column 1</th>
-                  <th>Column 2</th>
-                  <th>Column 1</th>
-                  <th>Column 2</th>
-                </tr>
-              </thead>
-              <tbody class="odd:bg-white even:bg-slate-100">
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -659,9 +552,9 @@
             const that = this.api();
             $("#input1").on("keyup change clear", function () {
               console.log("Fire");
-            //   if (that.search() !== this.value) {
-                that.column(3).search(this.value).draw();
-            //   }
+              //   if (that.search() !== this.value) {
+              that.column(3).search(this.value).draw();
+              //   }
             });
           },
         });
